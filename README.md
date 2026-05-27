@@ -26,7 +26,7 @@ To give a better look at the user experience, here are some screens from the app
 | :---: | :---: |
 | <img src="./screenshots/pet_details.png" width="280" alt="Pet Details"/> | <img src="./screenshots/add_pet.png" width="280" alt="Add Pet"/> |
 
-| Favorites Filter | User Profile | 
+| Favorites Filter | User Profile | Inbox |
 | :---: | :---: |
 | <img src="./screenshots/favorites.png" width="280" alt="Favorites Screen"/> | <img src="./screenshots/profile.png" width="280" alt="Profile Screen"/> | <img src="./screenshots/inbox.png" width="280" alt="Inbox"/> |
 
