@@ -63,10 +63,11 @@ Before you begin, ensure you have **Node.js** installed on your machine.
    git clone [https://github.com/Shirirudesu/Pet-Adopt-App.git](https://github.com/Shirirudesu/Pet-Adopt-App.git)
    cd Pet-Adopt-App
 
-2. **Install dependencies:** 
+2. **Install dependencies:**
+   ```env 
    npm install
 
-3. **Set up Environment Variables:**
+4. **Set up Environment Variables:**
    Create a `.env` file in the root directory of the project and populate it with your Clerk and Firebase credentials:
    ```env
    EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
@@ -78,7 +79,8 @@ Before you begin, ensure you have **Node.js** installed on your machine.
    EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
    EXPO_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
 
-4. **Start the application:**
+5. **Start the application:**
+   ```env
    npx expo start
 
 ---
