@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# 🐾 Pet-Adopt-App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mobile pet adoption app built with React Native (Expo). The app allows users to browse and filter pets, view details, list animals for adoption, manage favorites, and chat with pet owners in real time.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 Features
+
+- **User Authentication**: Secure and fast login via Google powered by **Clerk Expo**.
+- **Browse & Filter**: Explore various pet categories and filter them by category and gender.
+- **Pet Management**: Users can list new pets for adoption with rich details (name, breed, age, gender, weight, address, and description).
+- **Cloud Media Storage**: High-performance image uploads and hosting integrated with **Cloudinary API**.
+- **Custom Real-Time Chat**: A fully custom-built messaging system created using pure JavaScript, React Native components, and Firebase Firestore listeners for instant messaging.
+- **Favorites System**: Save favorite pets to a dedicated list for quick access.
+
+---
+
+## 📸 Screenshots
+
+To give a better look at the user experience, here are some screens from the application:
+
+|                                Welcome Screen                                |                         Home / Dashboard                          |
+| :--------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| <img src="./screenshots/welcome-page.png" width="280" alt="Welcome Screen"/> | <img src="./screenshots/home.png" width="280" alt="Home Screen"/> |
+
+|                               Pet Details                                |                         Add New Pet Form                         |
+| :----------------------------------------------------------------------: | :--------------------------------------------------------------: |
+| <img src="./screenshots/pet_details.png" width="280" alt="Pet Details"/> | <img src="./screenshots/add_pet.png" width="280" alt="Add Pet"/> |
+
+|                              Favorites Filter                               |                              User Profile                               |
+| :-------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| <img src="./screenshots/favorites.png" width="280" alt="Favorites Screen"/> | <img src="./screenshots/profile.png" width="280" alt="Profile Screen"/> |
+
+|                            Inbox                             |
+| :----------------------------------------------------------: |
+| <img src="./screenshots/inbox.png" width="280" alt="Inbox"/> |
+
+---
+
+## 🛠 Tech Stack
+
+- **Language:** JavaScript (React / React Native)
+- **Framework:** React Native (Expo SDK 54) with **Expo Router** (File-based routing)
+- **Authentication:** Clerk Expo (Google OAuth)
+- **Database & Real-time:** Firebase Firestore (Handles core data & custom real-time chat sync)
+- **Media Cloud:** Cloudinary API (Image hosting)
+- **UI & Styling:** Pure React Native StyleSheet & Flexbox (Custom UI layout), Expo Vector Icons
+- **Media & Assets:** Expo Image & Expo Image Picker
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+Before you begin, ensure you have **Node.js** installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
 
    ```bash
-   npm install
+   git clone [https://github.com/Shirirudesu/Pet-Adopt-App.git](https://github.com/Shirirudesu/Pet-Adopt-App.git)
+   cd Pet-Adopt-App
+
    ```
 
-2. Start the app
+2. **Install dependencies:**
 
-   ```bash
+   ```env
+   npm install
+
+   ```
+
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root directory of the project and populate it with your Clerk and Firebase credentials:
+
+   ```env
+   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
+   EXPO_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   EXPO_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+   EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+   EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+   EXPO_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
+
+   ```
+
+4. **Start the application:**
+   ```env
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 How to Run
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Once the Expo server is up and running, you can open the app using one of the following methods:
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **On Mobile (Expo Go):** Download the **Expo Go** app from the App Store or Google Play Store. Open it and scan the QR code displayed in your terminal.
+- **On Emulator:** Press `a` for Android Emulator or `i` for iOS Simulator directly in the terminal after starting the packager.
