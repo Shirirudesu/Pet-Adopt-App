@@ -60,7 +60,6 @@ Before you begin, ensure you have **Node.js** installed on your machine.
 ### Installation
 
 1. **Clone the repository:**
-
    ```bash
    git clone [https://github.com/Shirirudesu/Pet-Adopt-App.git](https://github.com/Shirirudesu/Pet-Adopt-App.git)
    cd Pet-Adopt-App
