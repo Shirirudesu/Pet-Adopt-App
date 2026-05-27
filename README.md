@@ -67,9 +67,10 @@ Before you begin, ensure you have **Node.js** installed on your machine.
    npm install
 
 3. **Set up Environment Variables:**
-   Create a .env file in the root directory of the project and populate it with your Firebase and Clerk credentials:
-   
+   Create a `.env` file in the root directory of the project and populate it with your Clerk and Firebase credentials:
+   ```env
    EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
    EXPO_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
    EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
    EXPO_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
@@ -77,7 +78,7 @@ Before you begin, ensure you have **Node.js** installed on your machine.
    EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
    EXPO_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
 
-5. **Start the application:**
+4. **Start the application:**
    npx expo start
 
 ---
